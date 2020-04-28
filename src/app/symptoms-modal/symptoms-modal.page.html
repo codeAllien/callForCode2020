@@ -1,0 +1,40 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content [fullscreen]="true" padding>
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="title" size='12'>
+          <ion-label>{{ title }}</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- Checkboxes-->
+    <ion-list lines="none">
+      <!-- TODO: Fare una ricerca approfondita su tutti i sintomi schiaccianti del corona virus-->
+      <ion-item class="cbox-symptoms" *ngFor="let symptom of symptoms">
+        <ion-label class="checkboxLabel">{{ symptom.value }}</ion-label>
+        <ion-checkbox slot="start" [(ngModel)]="symptom.isChecked" (ionChange)="selectedItem(symptom)"></ion-checkbox>
+      </ion-item>
+      <ion-item class="btn-group">
+        <ion-button class="btn-next" size="medium" shape="round" (click)="dismiss()">{{ btnDone }}</ion-button>
+    </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<!-- Note di cose da cambire : 
+
+  1) cambiare l intero design
+  2) sarebbe figo se il modal apparisse a tendina bottom-top (vedere android material design)
+  3) header/ list + checkbox farli da dio
+  4) ultimo checkbox with free typing (vediamo se ha senso)
+  5) scambiare i dati con il parent page
+  6) display i dati del parent page sotto in piccolino con colore grigio e un cerchio intorno con una x se si vuole eliminare
+  7) bottone ok e ritorna indietr o e sichiude il modal
+  8) sitemare la scroll bar che non si nasconda dietro all navbar
+
+-->

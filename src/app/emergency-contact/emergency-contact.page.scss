@@ -1,0 +1,169 @@
+a// General container rules:
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21%;
+    transform: translateY(-50%);
+  }
+  //For Android
+  .md {
+    #container {
+      text-align: center;
+  
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 24.25%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  //Change we dont have p
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    //color: #8c8c8c;
+    color: black;
+  
+    margin: 0;
+  }
+  //Links
+  #container a {
+    text-decoration: none;
+  }
+  
+  //Adding customer style to ionic elements:
+  
+  /** Navbar **/
+  ion-toolbar, ion-header {
+      --background: var(--ion-color-primary);
+  }
+  /** Progress Bar **/
+  ion-progress-bar {
+    left: 4.5%;
+    margin-bottom: 2rem;
+    
+    width: 93.5%;
+  }
+  /** Question 1 **/
+  .question {
+    ion-label {
+      color: grey;
+      font-size: 14px;
+      font-family: var('Open-Sans-LightItalic');
+  
+      position: absolute;
+      top: 0rem;
+      bottom: 6rem;
+      left: 10%;
+    }
+  }
+  /** Title of the page **/
+  .title {
+    ion-label {
+      --color: black;
+      font-family: 'Open-Sans-SemiBold';
+      font-size: var(--ion-font-size-header);
+      width: 85%;
+      text-align: left;
+  
+      position: absolute;
+      top: 2rem;
+      bottom: 4rem;
+      left: 10%;
+    }
+  }
+  /** List **/
+  ion-list {
+    position: inherit;
+    margin-top: 13%;
+    left: 0rem;
+  
+    //stretch to all the screen
+    width: 100%;
+    height: 60vh;
+  }
+  /** Items & Co. **/
+  .radio-btn {
+    ion-radio {
+      --color: var(--ion-color-base);
+      --color-checked: var( --ion-color-primary-dark);
+  
+      position: absolute;
+      margin-top: 0rem;
+    }
+    width: 88.5%;
+    margin-top: 1.5rem;
+    left: 6%;
+  
+    --inner-padding-start: 18%;
+  
+    border : 2px solid transparent;
+    border-radius: 12px;
+  }
+  .radio-btn:hover {
+    position: relative;
+    width: 88.5%;
+    margin-top: 1.5rem;
+    left: 6%;
+  
+    --inner-padding-start: 18%;
+    --background-hover: transparent;
+  
+    border : 2px solid var(--ion-color-primary-dark);
+    border-radius: 12px;
+  }
+  //rendere ios uguale ad android poi
+  .ios{
+    .radio-btn {
+      ion-radio {
+        background: lightblue;
+        border-color: green;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+      }
+      ion-label {
+        --background: lightblue;
+      }
+      ion-button {
+        position: inherit;
+        margin-left: 0rem;
+        width: 50%;
+        height: 80%;
+      }
+      top: 1rem;
+    }
+  }
+  
+  .btn-group {
+    ion-button {
+      position: absolute;
+  
+      width: 43%;
+      height: 90%;
+    }
+    .btn-next {
+      right: 1rem;
+      padding-bottom: 5px;
+    }
+    .btn-back {
+      left: 2%;
+      padding-bottom: 5px;
+    }
+    margin-top: 160px;
+    padding-top: 5%;
+    left: 0rem;
+    margin-bottom: 5px;
+    padding-bottom: 5%;
+    align-items: center;
+  }
+  
