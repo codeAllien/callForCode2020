@@ -2,6 +2,7 @@
 This project is created for the Call for Code 2020 Challenge to respond to the CODIV-19 pandemic
 
 # Emergency-Call
+This IONIC Application let user send their health status and location to a database to store, monitoring and send helt to the person, who are affectet from CODIV-19.
 
 ## Setting up
 1. Import the existing project
