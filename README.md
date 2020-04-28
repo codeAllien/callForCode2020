@@ -22,7 +22,8 @@ or
 ````
 ionic cordova run ios
 ````
-Attention:<br />
+5. For the position this project use the **NativCordova Geolocation Plugin**. This plugin is not available for the web. Therefore to test all the funcitonalities is raccomandable to test on a device.
+
+Attention Point 4:<br />
 Addind the _--target= DeviceID_ target you can also select the simulator device you want to test the application.
 
-5. For the position this project use the **NativCordova Geolocation Plugin**. This plugin is not available for the web. Therefore to test all the funcitonalities is raccomandable to test on a device.
