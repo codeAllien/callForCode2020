@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success-page.page.scss'],
 })
 export class SuccessPagePage implements OnInit {
+  questioTxt = '';
+  title = 'Thank you for your time! Our team is on the way to you'
 
   constructor() { }
 
