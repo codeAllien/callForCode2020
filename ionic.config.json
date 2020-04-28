@@ -1,6 +1,8 @@
 {
   "name": "emergencyCodiv19",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "35610f95"
 }

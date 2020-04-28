@@ -1,20 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<!-- Questo e´un placeholer per lo splashscreen animation al lanch della app-->
+<ion-header [translucent]="true" class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+        <ion-title></ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+</ion-header>
+<ion-content [fullscreen]="true" padding>
+    <!-- NAVBAR ELEMENT
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">{{ navBarTitle }}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    -->
+    <div id="container">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-progress-bar color="primary" value="0.1"></ion-progress-bar>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="question" size='12'>
+                    <ion-label>{{ questioTxt }}</ion-label>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col class="title" size='12'>
+                    <ion-label>{{ title }}</ion-label>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <!-- Radio-Buttons-->
+        <ion-list lines="none">
+            <ion-radio-group class="radio-group" [(ngModel)]="showValue" (click)="onRadioGroupClick($event)">
+                <ion-item id="radioWell" class="radio-btn">
+                    <ion-label class="label-well">{{ well }}</ion-label>
+                    <ion-radio slot="start" value="ok"></ion-radio>
+                </ion-item>
+                <ion-item id="radioSick" class="radio-btn" type=button (click)="presentModal()">
+                    <ion-label class="label-sick">{{ sick }}</ion-label>
+                    <ion-radio slot="start" value="sick"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+            <!-- IOS xk non hanno il bottone INDIETRO, mentre Android si !!!-->
+            <ion-item class="btn-group">
+                <ion-button class="btn-next" size="medium" shape="round" (click)="forward()">{{ btnDone }}</ion-button>
+            </ion-item>
+        </ion-list>
+    </div>
 </ion-content>
+
+<!-- Note di cose da cambire : 
+
+    1) pre selection at the very beginning is a goog idea ? UX idea? cheidere ad oana
+    4) Bottone: siccome e´il primo mettene uno centrale block => dalla seconda pagina si fa un animazione che diventino DUE
+    5) sistemare gli items per IOS too (togliere il radio buttons o farlo meglio siccome adesso c´e´il pulsante e calcolare meglio gli spazi ;) 
+-->
