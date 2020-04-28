@@ -1,7 +1,7 @@
-# callForCode2020
+# callForCode2020c Challenge
 This project is created for the Call for Code 2020 Challenge to respond to the CODIV-19 pandemic
 
-# Name Project Emergency-Call
+# Emergency-Call
 
 ## Setting up
 1. Import the existing project
