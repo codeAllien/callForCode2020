@@ -27,3 +27,5 @@ ionic cordova run ios
 Attention Point 4:<br />
 Addind the _--target= DeviceID_ target you can also select the simulator device you want to test the application.
 
+## Author:
+* Giulia Gallico - [codeAllien](https://github.com/codeAllien)
