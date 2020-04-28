@@ -1,4 +1,4 @@
-# callForCode2020 Challenge
+# Call For Code Challenge 2020
 This project is created for the Call for Code 2020 Challenge to respond to the CODIV-19 pandemic
 
 # Emergency-Call
