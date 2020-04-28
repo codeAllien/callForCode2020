@@ -13,7 +13,7 @@ export class EmergencyContactPage implements OnInit {
   no = 'No, I havent';
   btnNext = 'Next';
   btnBack = 'Back';
-  showValue = 'yes';
+  showValue = '';
 
   constructor(public navCtr: NavController) {}
 

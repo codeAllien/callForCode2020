@@ -15,6 +15,7 @@ export class PositiveContactPage implements OnInit {
   btnNext = 'Next';
   btnBack = 'Back';
   showValue = '';
+
   positiveContact = true;
 
   constructor(public navCtr: NavController, public userService: UserService) {}

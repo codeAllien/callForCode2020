@@ -117,6 +117,10 @@ export class CollectPositionPage implements OnInit {
   }
 
   private saveUserData(userProperty) {
+<<<<<<< HEAD
+=======
+    // se voglio aggiungere le coordinate devo implementare anche l altro metodo che lo trasforma dall user input
+>>>>>>> d2bbf6d0814f62b89241c23ff58235775ae51bff
     this.userService.addFullAddress(userProperty);
   }
 }

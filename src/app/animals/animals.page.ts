@@ -14,7 +14,7 @@ export class AnimalsPage implements OnInit {
   no = 'No, I havent';
   btnNext = 'Next';
   btnBack = 'Back';
-  showValue = 'yes';
+  showValue = '';
   domesticAnimal = true;
 
   constructor(public navCtr: NavController, public userService: UserService) {}

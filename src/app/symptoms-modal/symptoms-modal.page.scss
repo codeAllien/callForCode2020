@@ -91,9 +91,7 @@ ion-list {
   left: 6%;
   --inner-padding-start: 18%;
 }
-/** Rendere ios uguale ad android poi **/
 .ios{
-  //farlo nuovo per IOS
 }
 
 .btn-group {
@@ -110,21 +108,4 @@ ion-list {
     padding-bottom: 5%;
     align-items: center;
   }
-  /*
-  ion-button {
-    position: absolute;
-
-    width: 43%;
-    height: 80%;
-  }
-  .btn-next {
-    right: 1rem;
-  }
-  .btn-back {
-    left: 2%;
-  }
-  margin-top: 1rem;
-  bottom: 0;
-  align-items: center;
-  */
 }
